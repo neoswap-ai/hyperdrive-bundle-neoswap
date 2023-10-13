@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@coral-xyz/anchor": "^0.28.0",
+    "@neoswap/solana": "^0.3.6-Beta17",
+    "@solana/spl-token": "^0.3.8",
     "@solana/wallet-adapter-base": "^0.9.23",
     "@solana/wallet-adapter-react": "^0.15.35",
     "@solana/wallet-adapter-react-ui": "^0.9.34",
     "@solana/wallet-adapter-wallets": "^0.19.23",
     "@solana/web3.js": "^1.87.1",
+    "@staratlas/factory": "^0.6.0",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"
