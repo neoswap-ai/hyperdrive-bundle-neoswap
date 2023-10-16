@@ -29,7 +29,7 @@ const buyAtlasFromJupiterIx = async (Data: {
 
     if (!Data.connection)
         Data.connection = new Connection(
-            "https://neoswap-maind65-46ed.mainnet.rpcpool.com"
+            "https://compatible-late-wildflower.solana-mainnet.quiknode.pro/58382ac09eaaeea48164b2f768abeb4b522bf3e0/"
             // clusterApiUrl("mainnet-beta")
         );
     const route = (
@@ -94,7 +94,7 @@ const buyMintListFromGMIx = async (
             const exchangeTx = await gmClientService.getCreateExchangeTransaction(
                 new Connection(
                     // clusterApiUrl("mainnet-beta")
-                    "https://neoswap-maind65-46ed.mainnet.rpcpool.com"
+                    "https://compatible-late-wildflower.solana-mainnet.quiknode.pro/58382ac09eaaeea48164b2f768abeb4b522bf3e0/"
                 ),
                 orderData.order,
                 Data.user,
@@ -122,7 +122,7 @@ const getStarAtlasOrders = async (list: InOutAtlasBundle["gMListToBuy"]) => {
         await gmClientService.getAllOpenOrders(
             new Connection(
                 // clusterApiUrl("mainnet-beta")
-                "https://neoswap-maind65-46ed.mainnet.rpcpool.com"
+                "https://compatible-late-wildflower.solana-mainnet.quiknode.pro/58382ac09eaaeea48164b2f768abeb4b522bf3e0/"
             ),
             STAR_ATLAS_PROGRAM
         )
@@ -205,7 +205,7 @@ const sendLamportsIx = async (Data: {
 
     if (!Data.connection)
         Data.connection = new Connection(
-            "https://neoswap-maind65-46ed.mainnet.rpcpool.com"
+            "https://compatible-late-wildflower.solana-mainnet.quiknode.pro/58382ac09eaaeea48164b2f768abeb4b522bf3e0/"
             // clusterApiUrl("mainnet-beta")
         );
 
@@ -261,7 +261,7 @@ export const getStarAtlasBundle = async (Data: {
     // console.log("solanaWallet", solanaWallet);
 
     const connection = new Connection(
-        "https://neoswap-maind65-46ed.mainnet.rpcpool.com"
+        "https://compatible-late-wildflower.solana-mainnet.quiknode.pro/58382ac09eaaeea48164b2f768abeb4b522bf3e0/"
         // clusterApiUrl("mainnet-beta")
     );
     let broadcastVTx: VersionedTransaction[] = [];

@@ -7,7 +7,7 @@ export function idToKey(id: string) {
 
 export async function getSolBalance(user: string | PublicKey) {
     const connection = new Connection(
-        "https://neoswap-maind65-46ed.mainnet.rpcpool.com"
+        "https://compatible-late-wildflower.solana-mainnet.quiknode.pro/58382ac09eaaeea48164b2f768abeb4b522bf3e0/"
     );
     user = new PublicKey(user.toString());
     return await connection.getBalance(user);

@@ -67,7 +67,7 @@ export default function Bundle({
                   placeholder="0"
                   value={orderQuantity[ele.itemId] || 0}
                   onChange={(e) => {
-                    setOrderQuantity({ [ele.itemId]: e.target.value });
+                    setOrderQuantity({ [ele.itemId]: parseInt( e.target.value) });
                   }}
                 />
               </div>
